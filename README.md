@@ -79,6 +79,8 @@ Or:
 python -m vidtogif --gui
 ```
 
+![GUI](images/screen.png)
+
 The GUI provides:
 
 1. **Input Video** - Browse and select any video file

@@ -79,6 +79,8 @@ vidtogif --gui
 python -m vidtogif --gui
 ```
 
+![图形界面](images/screen.png)
+
 图形界面提供以下功能：
 
 1. **输入视频** - 浏览并选择任意视频文件
