@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vidtogif"
+dynamic = ["version"]
+description = "Convert any video to GIF at original resolution, with CLI and GUI support."
+readme = "README.md"
+license = {text = "GPL-3.0"}
+requires-python = ">=3.8"
+authors = [
+    {name = "VidToGif Contributors"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+    "Topic :: Multimedia :: Video :: Conversion",
+    "Environment :: Console",
+]
+dependencies = [
+    "opencv-python>=4.5.0",
+    "Pillow>=9.0.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/cycleuser/Vid2Gif"
+Issues = "https://github.com/cycleuser/Vid2Gif/issues"
+
+[project.scripts]
+vidtogif = "vidtogif.cli:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "vidtogif.__version__"}
+
+[tool.setuptools.packages.find]
+include = ["vidtogif*"]
